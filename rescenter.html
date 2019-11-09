@@ -2,16 +2,23 @@
 <html>
     <title>Resolution Center</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <style>
         html, body, h1, h2, h3, h4, h5, h6 {
           font-family: "Roboto", cursive, sans-serif;
         }
-        </style>
+        .dot {
+            height: 12px;
+            width: 12px;
+            background-color: rgb(21, 255, 0);
+            border-radius: 50%;
+            display: inline-block;
+        }
+    </style>
         
     <body>
 
-    <div class="w3-container w3-card">
+    <div class="w3-container w3-card w3-text-green">
         <h1 align="center">Resolution Center</h1>
     </div>
 
@@ -19,50 +26,57 @@
 
     <div class="w3-container" align = center>   
         <div class="w3-card-4" style="width:80%;" align="center">
-          <header class="w3-container w3-blue">
-            <h3>Upcoming</h3>
-          </header>
+            <header class="w3-container">
+                <h4>Upcoming Reminders</h4>
+            </header>
       
-          <div class="w3-container">
-            <p>Lorem ipsum dolor sit amet...</p>
-          </div>
-      
-          <footer class="w3-container w3-blue">
-            <h5>Footer</h5>
-          </footer>
+            <div class="w3-container" align = "left">
+                <p>Dexcom G6 replacement shipped</p>
+                <p>Current session ending in 7 days</p>
+            </div>
         </div>
 
         <br>
 
-        <div class="w3-card-4" style="width:80%;" align="center">
-            <header class="w3-container w3-blue">
-              <h3>Current Session 10/31 - </h3>
+        <div class="w3-card-4" style="width:80%;">
+            <header class="w3-container" align="center">
+              <h4>Current Session 10/31 - TBD</h4>
+              <h6>Sensor ID: 1234</h6>
             </header>
         
-            <div class="w3-container">
-              <p>Lorem ipsum dolor sit amet...</p>
+            <div class="w3-container" align = "left">
+                <h5>Non-Adjunctive Status</h5>
+                <p><span class="dot"></span> Current Glucose</p>
+                <p><span class="dot"></span> Trend</p>
+                <h5>Signal & Sensor Status</h5>
+                <p><span class="dot"></span> Signal</p>
+                <p><span class="dot"></span> Sensor</p>
             </div>
         
-            <footer class="w3-container w3-blue">
-              <h5>Footer</h5>
+            <footer class="w3-container w3-text-blue">
+              <h5>View Session</h5>
             </footer>
           </div>
 
           <br>
 
           <div class="w3-card-4" style="width:80%;" align="center">
-            <header class="w3-container w3-blue">
-              <h3>Session 10/25 - 10/30</h3>
+            <header class="w3-container">
+              <h4>Session 10/25 - 10/30 (6 days)</h4>
+              <h6>Sensor ID: 1233</h6>
             </header>
         
-            <div class="w3-container">
-              <p>Lorem ipsum dolor sit amet...</p>
+            <div class="w3-container" align = "left">
+                <p><span class="dot"></span> Full Session</p>
+                <p>Lorem ipsum dolor sit amet...</p>
             </div>
         
-            <footer class="w3-container w3-blue">
-              <h5>Footer</h5>
+            <footer class="w3-container w3-text-blue">
+              <h5>View Session</h5>
             </footer>
           </div>
+
+          <br>
     </div>
 
 </body>
