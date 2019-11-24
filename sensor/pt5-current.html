@@ -1,0 +1,103 @@
+<html>
+<head>
+  <title>Resolution Center</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="../script.js"></script>
+</head>
+<body>
+  <h1 id="title"><a href="pt5.html">
+    <img src="../images/back_arrow.png" height="25px"></a>&nbspResolution Center
+  </h1>
+
+  <div class="panel panel-default">
+    <div class="panel-body">
+      <b style="font-size: 20px">Session Nov 12 - tbd</b>
+      <p>Sensor ID: 199876<br>
+      <p>You're on <b>day 1</b> of your session. So far you have experienced <b>0</b> problems!</p>
+    </div>
+  </div>
+  <center>
+  <button class="btn active" onclick="sortCards('all')"> Show all</button>
+  <button class="btn" onclick="sortCards('warmup')"> Warmup</button>
+  <button class="btn" onclick="sortCards('signal')"> Signal</button>
+  <button class="btn" onclick="sortCards('sensor')"> Sensor</button>
+  <button class="btn" onclick="sortCards('reading')"> Reading</button>
+  </center>
+  <br><br>
+
+
+  <div class="sort warmup sensor">
+  <center><p><b>Day 1</b> (Nov 12)</p></center>
+  </div>
+
+
+  <div class="sort sensor">
+  <div class="panel panel-default">
+    <div class="panel-body">
+      <img src="../images/sensor.png" height="28px" id="warning">&nbsp<b style="font-size: 18px">Replacement Pending Approval</b>
+      <p style="margin-left: 30px">7:56 PM - Nov 12</p>
+      <p>Dexcom has received your service request! Your order is pending approval!</p>
+    </div>
+    <div class="panel-footer">
+        <center><a data-toggle="collapse" href="#showmore4">show more (1)</a></center>
+    </div>
+    <div id="showmore4" class="collapse">
+      <div class="well">
+        <img src="../images/sensor.png" height="28px" id="warning">&nbsp<b style="font-size: 18px">Sensor Replacement</b>
+        <p style="margin-left: 30px">7:45 PM - Nov 12</p>
+        <p>You need to finish your sensor replacement request form!</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <div class="sort warmup sensor">
+  <div class="panel panel-default">
+    <div class="panel-body">
+      <img src="../images/check.png" height="28px" id="warning">&nbsp<b style="font-size: 18px">Session Started</b>
+      <p style="margin-left: 30px">7:40 PM - Nov 12</p>
+      <p>Warmup was successful. You will now receive glucose readings.</p>
+    </div>
+    <div class="panel-footer">
+        <center><a data-toggle="collapse" href="#showmore4">show more (5)</a></center>
+    </div>
+    <div id="showmore4" class="collapse">
+      <div class="well">
+        <img src="../images/warmup.png" height="23px" id="warning">&nbsp<b style="font-size: 18px">Warmup</b>
+        <p style="margin-left: 30px">5:40 PM - Nov 12</p>
+        <p>Your sensor's 2 hour warmup period has started. Please use a blood glucose meter to make treatment decisions during this time.</p>
+      </div>
+      <div class="well">
+        <img src="../images/check.png" height="28px" id="warning">&nbsp<b style="font-size: 18px">Pairing Successful</b>
+        <p style="margin-left: 30px">5:39 PM - Nov 12</p>
+        <p>Pairing completed in 13 minutes.</p>
+      </div>
+      <div class="well">
+        <img src="../images/warmup.png" height="23px" id="warning">&nbsp<b style="font-size: 18px">Pairing</b>
+        <p style="margin-left: 30px">5:26 PM - Nov 12</p>
+        <p>Now pairing your phone and transmitter. This may take up to 20 minutes.</p>
+      </div>
+      <div class="well">
+        <img src="../images/insertion.png" height="22px" id="warning">&nbsp<b style="font-size: 18px">Insert & Attach</b>
+        <p style="margin-left: 30px">5:25 PM - Nov 12</p>
+        <p>You have inserted your sensor and attached your transmitter.</p>
+      </div>
+      <div class="well">
+        <img src="../images/sensor.png" height="25px" id="warning">&nbsp<b style="font-size: 18px">Sensor & Transmitter Info</b>
+        <p style="margin-left: 30px">5:20 PM - Nov 12</p>
+        <p>Your sensor code is 19986.<br>Your transmitter serial number is 198976.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  sortCards("all");
+</script>
+</body>
+</html>

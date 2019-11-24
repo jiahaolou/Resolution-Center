@@ -1,0 +1,146 @@
+<html>
+<head>
+  <title>Resolution Center</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="../script.js"></script>
+</head>
+<body>
+  <h1 id="title"><a href="pt1.html">
+    <img src="../images/back_arrow.png" height="25px"></a>&nbspResolution Center
+  </h1>
+
+  <div class="panel panel-default">
+    <div class="panel-body">
+      <b style="font-size: 20px">Session Nov 12 - tbd</b>
+      <p>Sensor ID: 199876<br>
+      <p>You're on <b>day 8</b> of your session. So far you have experienced <b>2</b> inaccurate readings and <b>2</b> signal losses.</p>
+    </div>
+  </div>
+  <center>
+  <button class="btn active" onclick="sortCards('all')"> Show all</button>
+  <button class="btn" onclick="sortCards('warmup')"> Warmup</button>
+  <button class="btn" onclick="sortCards('signal')"> Signal</button>
+  <button class="btn" onclick="sortCards('sensor')"> Sensor</button>
+  <button class="btn" onclick="sortCards('reading')"> Reading</button>
+  </center>
+  <br><br>
+
+  <div class="sort signal">
+    <center><p><b>Day 8</b> (Nov 19)</p></center>
+  </div>
+
+  <div class="sort signal">
+  <div class="panel panel-default">
+    <div class="panel-body">
+      <img src="../images/warning.png" height="25px" id="warning">&nbsp<b style="font-size: 18px">Signal Loss</b>
+      <p style="margin-left: 30px">8:22 PM - Nov 19</p>
+      <p>Your transmitter has stopped sending information!</p>
+      <center><a href="pt2.html"><button type="button" class="btn btn-default" style="color: green; border-color: green">Troubleshoot</button></a></center>
+
+    </div>
+  </div>
+</div>
+
+  <div class="sort signal reading">
+    <center><p><b>Day 3</b> (Nov 14)</p></center>
+  </div>
+
+  <div class="sort signal">
+  <div class="panel panel-default">
+    <div class="panel-body">
+      <img src="../images/check.png" height="28px" id="warning">&nbsp<b style="font-size: 18px">Signal Reconnected</b>
+      <p style="margin-left: 30px">5:11 PM - Nov 14</p>
+      <p>Duration of signal loss was 16 minutes. Your missing glucose readings will now appear on the graph.</p>
+    </div>
+    <div class="panel-footer">
+        <center><a data-toggle="collapse" href="#showmore2">show more (1)</a></center>
+    </div>
+    <div id="showmore2" class="collapse">
+      <div class="well">
+        <img src="../images/warning.png" height="25px" id="warning">&nbsp<b style="font-size: 18px">Signal Loss</b>
+        <p style="margin-left: 30px">4:55 PM - Nov 15</p>
+        <p>Your transmitter has stopped sending information!</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="sort reading">
+  <div class="panel panel-default">
+    <div class="panel-body">
+      <img src="../images/check.png" height="28px" id="warning">&nbsp<b style="font-size: 18px">Reading within Range</b>
+      <p style="margin-left: 30px">1:20 PM - Nov 14</p>
+      <p>Your glucose readings are back within range!
+    </div>
+    <div class="panel-footer">
+        <center><a data-toggle="collapse" href="#showmore3">show more (2)</a></center>
+    </div>
+    <div id="showmore3" class="collapse">
+      <div class="well">
+        <img src="../images/warning.png" height="25px" id="warning">&nbsp<b style="font-size: 18px">2nd Inaccurate Reading</b>
+        <p style="margin-left: 30px">12:15 PM - Nov 14</p>
+        <p>Your CGM reading is not within 20/20. This is your 2nd out of 3.</p>
+      </div>
+      <div class="well">
+        <img src="../images/warning.png" height="25px" id="warning">&nbsp<b style="font-size: 18px">1st Inaccurate Reading</b>
+        <p style="margin-left: 30px">11:11 AM - Nov 14</p>
+        <p>Your CGM reading is not within 20/20. This is your 1st out of 3.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="sort warmup sensor">
+  <center><p><b>Day 1</b> (Nov 12)</p></center>
+  </div>
+
+  <div class="sort warmup sensor">
+  <div class="panel panel-default">
+    <div class="panel-body">
+      <img src="../images/check.png" height="28px" id="warning">&nbsp<b style="font-size: 18px">Session Started</b>
+      <p style="margin-left: 30px">7:40 PM - Nov 12</p>
+      <p>Warmup was successful. You will now receive glucose readings.</p>
+    </div>
+    <div class="panel-footer">
+        <center><a data-toggle="collapse" href="#showmore4">show more (5)</a></center>
+    </div>
+    <div id="showmore4" class="collapse">
+      <div class="well">
+        <img src="../images/warmup.png" height="23px" id="warning">&nbsp<b style="font-size: 18px">Warmup</b>
+        <p style="margin-left: 30px">5:40 PM - Nov 12</p>
+        <p>Your sensor's 2 hour warmup period has started. Please use a blood glucose meter to make treatment decisions during this time.</p>
+      </div>
+      <div class="well">
+        <img src="../images/check.png" height="28px" id="warning">&nbsp<b style="font-size: 18px">Pairing Successful</b>
+        <p style="margin-left: 30px">5:39 PM - Nov 12</p>
+        <p>Pairing completed in 13 minutes.</p>
+      </div>
+      <div class="well">
+        <img src="../images/warmup.png" height="23px" id="warning">&nbsp<b style="font-size: 18px">Pairing</b>
+        <p style="margin-left: 30px">5:26 PM - Nov 12</p>
+        <p>Now pairing your phone and transmitter. This may take up to 20 minutes.</p>
+      </div>
+      <div class="well">
+        <img src="../images/insertion.png" height="22px" id="warning">&nbsp<b style="font-size: 18px">Insert & Attach</b>
+        <p style="margin-left: 30px">5:25 PM - Nov 12</p>
+        <p>You have inserted your sensor and attached your transmitter.</p>
+      </div>
+      <div class="well">
+        <img src="../images/sensor.png" height="25px" id="warning">&nbsp<b style="font-size: 18px">Sensor & Transmitter Info</b>
+        <p style="margin-left: 30px">5:20 PM - Nov 12</p>
+        <p>Your sensor code is 19986.<br>Your transmitter serial number is 198976.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  sortCards("all");
+</script>
+</body>
+</html>

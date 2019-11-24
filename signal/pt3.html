@@ -1,0 +1,113 @@
+<html>
+<head>
+  <title>Resolution Center</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <h1 id="title"><a href="#">
+    <img src="../images/back_arrow.png" height="25px"></a>&nbspResolution Center
+  </h1>
+
+  <br>
+
+
+  <div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">We're happy that you're happy!</h4>
+        </div>
+        <div class="modal-body">
+          <p>Thanks for your feedback!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-success">
+    <div class="panel-heading">
+      <b class="card-title">Current Session Nov 12 - tbd</b>
+    </div>
+    <div class="panel-body">
+      <p><b>Can You Use the G6 to Treat? &nbsp<b id="treatable-no">NO</b></b><br>
+         <img src="../images/red-x.png" height="25px">&nbsp Current glucose reading<br>
+         <img src="../images/red-x.png" height="25px">&nbsp Trend<br>
+         <img src="../images/red-x.png" height="25px">&nbsp Arrow<br>
+      </p>
+    </div>
+    <div class="well">
+      <b style="font-size: 18px">How do you feel right now?</b>
+      <a href="#" data-toggle="modal" data-target="#myModal"><img src="../images/happy.jpg" height="24px"></a>
+      <a href="#"><img src="../images/sad.jpg" height="24px"></a>
+    </div>
+    <div class="well">
+      <img src="../images/troubleshoot.jpg" height="22px" id="warning">&nbsp<b style="font-size: 18px">Signal Loss Troubleshooting</b>
+      <p style="margin-left: 30px">8:27 PM - Nov 19</p>
+      <p>You have started the self-diagnose checklist.</p>
+      <center><a href="pt4.html"><button type="button" class="btn btn-default">Resume</button></a>
+    </div>
+    <div class="panel-footer">
+        <center><a href="pt3-current.html">view session (13)</a></center>
+    </div>
+  </div>
+
+
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <b class="card-title">Session Nov 6 - Nov 12</b> &nbsp(7 days)
+    </div>
+    <div class="panel-body">
+      <p>Your sensor only lasted <b>7 days</b> because you reported that your sensor fell off! You also experienced <b>4</b> inaccurate readings.</p>
+    </div>
+    <div class="panel-footer">
+        <center><a href="">view session (63)</a></center>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <b class="card-title">Session Oct 28 - Nov 6</b> &nbsp(10 days)
+    </div>
+    <div class="panel-body">
+      <p>Your sensor lasted the expected <b>10 days</b>. You experienced <b>2</b> inaccurate readings and <b>2</b> signal losses.</p>
+    </div>
+    <div class="panel-footer">
+        <center><a href="">view session (80)</a></center>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <b class="card-title">Session Oct 24 - Oct 28</b> &nbsp(5 days)
+    </div>
+    <div class="panel-body">
+      <p>Your sensor only lasted <b>5 days</b> because you reported excessive bleeding. You experienced <b>4</b> inaccurate readings and <b>2</b> signal losses.</p>
+    </div>
+    <div class="panel-footer">
+        <center><a href="">view session (67)</a></center>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <b class="card-title">Session Oct 16 - Oct 24</b> &nbsp(9 days)
+    </div>
+    <div class="panel-body">
+      <p>Your sensor lasted <b>9 days</b>. You experienced <b>3</b> inaccurate readings and <b>1</b> sensor error.</p>
+    </div>
+    <div class="panel-footer">
+        <center><a href="">view session (58)</a></center>
+    </div>
+  </div>
+
+
+</body>
+</html>
